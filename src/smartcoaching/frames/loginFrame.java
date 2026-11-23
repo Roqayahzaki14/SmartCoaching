@@ -2,20 +2,20 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
-package smartcoaching;
+package smartcoaching.frames;
 
 /**
  *
  * @author roqayahzaki
  */
-public class WelcomeFrame extends javax.swing.JFrame {
+public class loginFrame extends javax.swing.JFrame {
     
-    private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(WelcomeFrame.class.getName());
+    private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(loginFrame.class.getName());
 
     /**
-     * Creates new form WelcomeFrame
+     * Creates new form loginFrame
      */
-    public WelcomeFrame() {
+    public loginFrame() {
         initComponents();
     }
 
@@ -28,32 +28,39 @@ public class WelcomeFrame extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jPanel2 = new javax.swing.JPanel();
+        mainPanel = new javax.swing.JPanel();
+        jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setTitle("Smart Coaching");
-        setPreferredSize(new java.awt.Dimension(1000, 650));
+        setFocusTraversalKeysEnabled(false);
+        setLocation(new java.awt.Point(0, 0));
+        setMaximizedBounds(new java.awt.Rectangle(0, 0, 0, 0));
+        setPreferredSize(new java.awt.Dimension(820, 650));
         setResizable(false);
-        setSize(new java.awt.Dimension(1000, 650));
-        getContentPane().setLayout(new java.awt.FlowLayout());
 
-        jPanel2.setForeground(new java.awt.Color(255, 255, 0));
+        mainPanel.setPreferredSize(new java.awt.Dimension(820, 650));
+        mainPanel.setLayout(new java.awt.GridLayout(1, 2));
 
-        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
-        jPanel2.setLayout(jPanel2Layout);
-        jPanel2Layout.setHorizontalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 700, Short.MAX_VALUE)
+        jLabel1.setText("jLabel1");
+        mainPanel.add(jLabel1);
+
+        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
+        getContentPane().setLayout(layout);
+        layout.setHorizontalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(mainPanel, javax.swing.GroupLayout.PREFERRED_SIZE, 820, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 12, Short.MAX_VALUE))
         );
-        jPanel2Layout.setVerticalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 500, Short.MAX_VALUE)
+        layout.setVerticalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(mainPanel, javax.swing.GroupLayout.PREFERRED_SIZE, 650, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
-
-        getContentPane().add(jPanel2);
 
         pack();
-        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
     /**
@@ -78,10 +85,11 @@ public class WelcomeFrame extends javax.swing.JFrame {
         //</editor-fold>
 
         /* Create and display the form */
-        java.awt.EventQueue.invokeLater(() -> new WelcomeFrame().setVisible(true));
+        java.awt.EventQueue.invokeLater(() -> new loginFrame().setVisible(true));
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JPanel jPanel2;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JPanel mainPanel;
     // End of variables declaration//GEN-END:variables
 }

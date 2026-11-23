@@ -1,5 +1,7 @@
 
 package smartcoaching;
+import smartcoaching.frames.WelcomeFrame;
+import smartcoaching.frames.AccountTypeFrame;
 import java.sql.Connection;
 import java.sql.SQLException;
 /**
@@ -24,7 +26,10 @@ public class SmartCoaching {
         catch(SQLException e){
             e.printStackTrace();
         }
-        
+        WelcomeFrame w = new WelcomeFrame();
+//        w.show();
+AccountTypeFrame a = new AccountTypeFrame();
+a.show();
         //DatabaseSetup.createExerciseTable();
         //DatabaseSetup.insertExcercise();
         //DatabaseSetup.printExercise();
