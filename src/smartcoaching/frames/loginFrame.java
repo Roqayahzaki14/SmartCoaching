@@ -19,6 +19,7 @@ public class loginFrame extends javax.swing.JFrame {
     public loginFrame() {
         initComponents();
         this.getContentPane().setBackground(new Color(250, 245, 241));
+        emailField.setLabelText("ali");
         
     }
 
@@ -38,7 +39,7 @@ public class loginFrame extends javax.swing.JFrame {
         titleLabel = new javax.swing.JLabel();
         emailPanel = new javax.swing.JPanel();
         emailIcon = new javax.swing.JLabel();
-        myTextFeild1 = new components.myTextFeild();
+        emailField = new components.myTextFeild();
         emailPanel1 = new javax.swing.JPanel();
         emailIcon1 = new javax.swing.JLabel();
         myTextFeild2 = new components.myTextFeild();
@@ -88,9 +89,12 @@ public class loginFrame extends javax.swing.JFrame {
         emailIcon.setHorizontalTextPosition(javax.swing.SwingConstants.LEFT);
         emailPanel.add(emailIcon);
 
-        myTextFeild1.setBackground(new java.awt.Color(250, 245, 241));
-        myTextFeild1.setPreferredSize(new java.awt.Dimension(200, 47));
-        emailPanel.add(myTextFeild1);
+        emailField.setBackground(new java.awt.Color(250, 245, 241));
+        emailField.setToolTipText("");
+        emailField.setPreferredSize(new java.awt.Dimension(200, 47));
+        emailField.addActionListener(this::emailFieldActionPerformed);
+        emailPanel.add(emailField);
+        emailField.getAccessibleContext().setAccessibleName("");
 
         jPanel2.add(emailPanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 330, -1, -1));
 
@@ -116,6 +120,10 @@ public class loginFrame extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void emailFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_emailFieldActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_emailFieldActionPerformed
 
     /**
      * @param args the command line arguments
@@ -144,13 +152,13 @@ public class loginFrame extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel descriptionLabel;
+    private components.myTextFeild emailField;
     private javax.swing.JLabel emailIcon;
     private javax.swing.JLabel emailIcon1;
     private javax.swing.JPanel emailPanel;
     private javax.swing.JPanel emailPanel1;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JPanel jPanel2;
-    private components.myTextFeild myTextFeild1;
     private components.myTextFeild myTextFeild2;
     private javax.swing.JLabel titleLabel;
     private javax.swing.JLabel welcomeDumbbellImage;
