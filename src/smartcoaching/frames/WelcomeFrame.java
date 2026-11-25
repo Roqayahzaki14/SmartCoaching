@@ -164,7 +164,7 @@ public class WelcomeFrame extends javax.swing.JFrame {
         jPanel1.add(contentPanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(-2, 0, 410, 650));
 
         welcomeWalpaper.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        welcomeWalpaper.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/welcomeWalpaper.png"))); // NOI18N
+        welcomeWalpaper.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/greenWavesRight.png"))); // NOI18N
         welcomeWalpaper.setHorizontalTextPosition(javax.swing.SwingConstants.LEFT);
         jPanel1.add(welcomeWalpaper, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
