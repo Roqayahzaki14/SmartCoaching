@@ -3,6 +3,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
 package smartcoaching.frames;
+import java.awt.*;
 
 /**
  *
@@ -17,6 +18,8 @@ public class loginFrame extends javax.swing.JFrame {
      */
     public loginFrame() {
         initComponents();
+        this.getContentPane().setBackground(new Color(250, 245, 241));
+        
     }
 
     /**
@@ -28,8 +31,18 @@ public class loginFrame extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        mainPanel = new javax.swing.JPanel();
-        jLabel1 = new javax.swing.JLabel();
+        jPanel2 = new javax.swing.JPanel();
+        welcomeLabel = new javax.swing.JLabel();
+        descriptionLabel = new javax.swing.JLabel();
+        welcomeDumbbellImage = new javax.swing.JLabel();
+        titleLabel = new javax.swing.JLabel();
+        emailPanel = new javax.swing.JPanel();
+        emailIcon = new javax.swing.JLabel();
+        myTextFeild1 = new components.myTextFeild();
+        emailPanel1 = new javax.swing.JPanel();
+        emailIcon1 = new javax.swing.JLabel();
+        myTextFeild2 = new components.myTextFeild();
+        jLabel3 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setFocusTraversalKeysEnabled(false);
@@ -37,28 +50,69 @@ public class loginFrame extends javax.swing.JFrame {
         setMaximizedBounds(new java.awt.Rectangle(0, 0, 0, 0));
         setPreferredSize(new java.awt.Dimension(820, 650));
         setResizable(false);
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        mainPanel.setPreferredSize(new java.awt.Dimension(820, 650));
-        mainPanel.setLayout(new java.awt.GridLayout(1, 2));
+        jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel1.setText("jLabel1");
-        mainPanel.add(jLabel1);
+        welcomeLabel.setBackground(new java.awt.Color(48, 53, 45));
+        welcomeLabel.setFont(new java.awt.Font("Serif", 1, 22)); // NOI18N
+        welcomeLabel.setForeground(new java.awt.Color(51, 69, 24));
+        welcomeLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        welcomeLabel.setText("Welcome back!");
+        welcomeLabel.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jPanel2.add(welcomeLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 210, -1, -1));
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addComponent(mainPanel, javax.swing.GroupLayout.PREFERRED_SIZE, 820, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 12, Short.MAX_VALUE))
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(mainPanel, javax.swing.GroupLayout.PREFERRED_SIZE, 650, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
+        descriptionLabel.setBackground(new java.awt.Color(119, 119, 109));
+        descriptionLabel.setFont(new java.awt.Font("Serif", 1, 14)); // NOI18N
+        descriptionLabel.setForeground(new java.awt.Color(119, 119, 109));
+        descriptionLabel.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
+        descriptionLabel.setText("sign in to your account");
+        descriptionLabel.setVerticalAlignment(javax.swing.SwingConstants.TOP);
+        jPanel2.add(descriptionLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 290, 140, -1));
+
+        welcomeDumbbellImage.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/welcomeDumbbell.png"))); // NOI18N
+        jPanel2.add(welcomeDumbbellImage, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 90, -1, -1));
+
+        titleLabel.setFont(new java.awt.Font("Serif", 1, 48)); // NOI18N
+        titleLabel.setForeground(new java.awt.Color(101, 116, 81));
+        titleLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        titleLabel.setText("Smart Coaching");
+        jPanel2.add(titleLabel, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 160, -1, -1));
+
+        emailPanel.setBackground(new java.awt.Color(250, 245, 241));
+        emailPanel.setPreferredSize(new java.awt.Dimension(300, 55));
+        emailPanel.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT, 10, 5));
+
+        emailIcon.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        emailIcon.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/EmailIcon.png"))); // NOI18N
+        emailIcon.setHorizontalTextPosition(javax.swing.SwingConstants.LEFT);
+        emailPanel.add(emailIcon);
+
+        myTextFeild1.setBackground(new java.awt.Color(250, 245, 241));
+        myTextFeild1.setPreferredSize(new java.awt.Dimension(200, 47));
+        emailPanel.add(myTextFeild1);
+
+        jPanel2.add(emailPanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 330, -1, -1));
+
+        emailPanel1.setBackground(new java.awt.Color(250, 245, 241));
+        emailPanel1.setPreferredSize(new java.awt.Dimension(300, 55));
+        emailPanel1.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT, 10, 5));
+
+        emailIcon1.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        emailIcon1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/EmailIcon.png"))); // NOI18N
+        emailIcon1.setHorizontalTextPosition(javax.swing.SwingConstants.LEFT);
+        emailPanel1.add(emailIcon1);
+
+        myTextFeild2.setBackground(new java.awt.Color(250, 245, 241));
+        myTextFeild2.setPreferredSize(new java.awt.Dimension(200, 47));
+        emailPanel1.add(myTextFeild2);
+
+        jPanel2.add(emailPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 400, -1, -1));
+
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/loginImage.png"))); // NOI18N
+        jPanel2.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
+
+        getContentPane().add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 820, 650));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -89,7 +143,17 @@ public class loginFrame extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JPanel mainPanel;
+    private javax.swing.JLabel descriptionLabel;
+    private javax.swing.JLabel emailIcon;
+    private javax.swing.JLabel emailIcon1;
+    private javax.swing.JPanel emailPanel;
+    private javax.swing.JPanel emailPanel1;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JPanel jPanel2;
+    private components.myTextFeild myTextFeild1;
+    private components.myTextFeild myTextFeild2;
+    private javax.swing.JLabel titleLabel;
+    private javax.swing.JLabel welcomeDumbbellImage;
+    private javax.swing.JLabel welcomeLabel;
     // End of variables declaration//GEN-END:variables
 }
